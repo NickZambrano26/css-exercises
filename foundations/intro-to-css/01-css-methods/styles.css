@@ -1,0 +1,7 @@
+div {
+    background-color: red;
+    color: white; 
+    font-size: 32px; /*Tamaño del texto*/
+    text-align: center; /*Texto centrado al medio*/
+    font-weight: bold; /*Texto en negrita*/
+}
