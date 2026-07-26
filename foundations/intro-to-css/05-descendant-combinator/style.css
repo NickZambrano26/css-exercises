@@ -1,1 +1,24 @@
-/* Add CSS Styling */
+/*Combinador descendiente usando clases*/
+.container .text {
+    background: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+
+/*combinador descendiente
+Quiere decir que todos los <p> que esten dentro de un div tendran estos estilos
+div p {
+    background: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+
+Hasta se pueden mezclar los dos estilos (un tipo y una clase)
+.container .text {
+    background: yellow;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+}
+}*/
