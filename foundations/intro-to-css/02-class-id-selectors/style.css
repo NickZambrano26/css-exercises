@@ -1,1 +1,16 @@
-/* Add CSS Styling */
+.impar {
+    background-color: rgb(241, 39, 238);
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+}
+.alone {
+    font-size: 24px;
+}
+#second {
+    color:#2043f5;
+    font-size: 36px;
+}
+#solitario {
+    background-color: #84f520;
+    font-size: 24px;
+    font-weight: bold;
+}
