@@ -7,29 +7,35 @@ body {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
-
+/*error encontrado, para solucionarlo cambie de lugar los selectores*/
+.para {
+  font-size: 22px;
+}
 .small-para {
   font-size: 14px;
   font-weight: 800;
 }
 
-.para {
-  font-size: 22px;
+/*
+  El erro era debido a que .button termina reemplazando las propiedades de .confirm
+  debido a que estaba de ultimo y ganaba
+*/
+/*Ahora ya esta corregido*/
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
 }
-
 .confirm {
   background: green;
   color: white;
   font-weight: bold;
 } 
 
-.button {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  font-size: 20px;
-}
 
-.child {
+/*Segundo error, el error aqui fue porque div.text tenia más peso 
+ya lo corregi colocando .text.child, asi al tener 2 clases tiene mas peso*/
+.text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
