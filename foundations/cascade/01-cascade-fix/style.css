@@ -7,7 +7,7 @@ body {
   color: hsl(0, 0%, 0%);
   font-weight: 800;
 }
-/*error encontrado, para solucionarlo cambie de lugar los selectores*/
+/* Se mueve .small-para después de .para para que gane por orden de las reglas */
 .para {
   font-size: 22px;
 }
@@ -17,10 +17,11 @@ body {
 }
 
 /*
-  El erro era debido a que .button termina reemplazando las propiedades de .confirm
-  debido a que estaba de ultimo y ganaba
-*/
-/*Ahora ya esta corregido*/
+  .button y .confirm tienen la misma prioridad.
+  Como .button estaba más abajo, sus estilos se aplicaban al botón Confirm.
+  Lo solucioné moviendo .confirm debajo de .button.
+
+  Ahora ya esta corregido*/
 .button {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
@@ -33,8 +34,9 @@ body {
 } 
 
 
-/*Segundo error, el error aqui fue porque div.text tenia más peso 
-ya lo corregi colocando .text.child, asi al tener 2 clases tiene mas peso*/
+/*div.text ganaba porque tenía más prioridad.
+  Cambié el selector por .text.child para darle más prioridad
+  y que se aplicaran estos estilos.*/
 .text.child {
   color: rgb(0, 0, 0);
   font-weight: 800;
